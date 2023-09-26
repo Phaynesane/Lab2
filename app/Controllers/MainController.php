@@ -102,9 +102,9 @@ class MainController extends BaseController
         'musicplaylist_id'=>$this->request->getVar('musicplaylist_id'),
         ];
         
-        var_dump($data);
+        
         $this->musicbridge->save($data);
-        // return redirect()->to('/');
+        return redirect()->to('/');
     }
     
     public function musicplaylist($id= null){
