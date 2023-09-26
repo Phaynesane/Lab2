@@ -35,7 +35,6 @@
                 const track = playlistItems[trackIndex];
                 const trackSrc = track.getAttribute('data-src');
                 audio.src = trackSrc;
-                audio.play();
                 currentTrack = trackIndex;
             }
         }
@@ -63,5 +62,8 @@
         playTrack(currentTrack);
     </script>
     <script>
-        
+        function setMusicID(musicID){
+            console.log(musicID);
+            document.getElementById('id').value = musicID;
+        }
     </script>
